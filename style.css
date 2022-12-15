@@ -6,29 +6,25 @@
     
 }
 
-#divs{
-    visibility: hidden;
-}
+
 
 #small{
     font-size: 50px;
 }
 
 #medium{
-    font-size: 150px;
+    font-size: 100px;
 }
 
 #large{
-    font-size: 200px;
+    font-size: 150px;
 }
 @media(max-width: 520px) {
     body{
         background-color: rgb(172, 35, 35);
     }
     
-    #small{
-        visibility: visible;
-    }
+    
 }
 
 @media (min-width: 521px) and (max-width: 1024px) {
@@ -36,9 +32,28 @@
         background-color: rgb(35, 172, 76);
     }
 
-        #medium {
-            visibility: visible;
+    #divs{
+        display:flex
+    }
+
+        #small {
+            background-color: rgb(156, 36, 32);
+            width: 66%;
         }
+    
+        #medium {
+            background-color: rgb(6, 7, 56);
+            width: 33%;
+        }
+    
+        #large {
+            background-color: rgb(32, 131, 156);
+            width: 100%;
+        }
+
+
+
+        
 }
 
 @media(min-width: 1024px) {
@@ -46,9 +61,12 @@
         background-color: rgb(70, 49, 192);
     }
 
-        #large {
-            visibility: visible;
-        }
+    #divs{
+        display: flex;
+        justify-content: center;
+    }
+
+        
 
                 
 }
