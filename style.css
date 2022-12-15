@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:aliceblue;
+    text-align: center;
+    
+}
+
+#divs{
+    visibility: hidden;
+}
+
+#small{
+    font-size: 50px;
+}
+
+#medium{
+    font-size: 150px;
+}
+
+#large{
+    font-size: 200px;
+}
+@media(max-width: 520px) {
+    body{
+        background-color: rgb(172, 35, 35);
+    }
+    
+    #small{
+        visibility: visible;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 1024px) {
+    body {
+        background-color: rgb(35, 172, 76);
+    }
+
+        #medium {
+            visibility: visible;
+        }
+}
+
+@media(min-width: 1024px) {
+    body {
+        background-color: rgb(70, 49, 192);
+    }
+
+        #large {
+            visibility: visible;
+        }
+
+                
+}
